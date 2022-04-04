@@ -39,7 +39,8 @@ class Pelanggan extends CI_Controller {
 	public function detailproduk($id_produk)
 	{
 		$data=array(
-			'produk'=>$this->Produk_model->getallprodukbyid($id_produk)	
+			'produk'=>$this->Produk_model->getallprodukbyid($id_produk),
+			'katagori'=>$this->Produk_model->getallkatagori()
 		);
 		$this->load->view('pelanggan/detailproduk',$data);
 	}
