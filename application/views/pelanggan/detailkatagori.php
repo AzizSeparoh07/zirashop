@@ -184,7 +184,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 
 					
 					<li class="dropdown ">
-						<a href="<?= base_url('pelanggan/getkatagori'.$row->id_katagori);?>"><?= $row->nama_katagori?></a>
+						<a href="<?= base_url('pelanggan/getkatagori/'.$row->id_katagori);?>"><?= $row->nama_katagori?></a>
 					
 
 					<?php endforeach;?>
